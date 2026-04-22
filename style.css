@@ -1,0 +1,105 @@
+/* RESET E VARIABILI */
+:root {
+    --main-color: #ffffff;
+    --accent-color: #e91e63; /* Il rosa acceso dello screenshot */
+    --bg-dark: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--main-color);
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh; /* Altezza totale dello schermo */
+    width: 100%;
+    background-image: url('foto-vineria.jpg'); /* La tua foto di sfondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay per scurire la foto (come il filtro rosso/nero dello screenshot) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Scurisce la foto al 60% */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Mette il testo sopra l'overlay */
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* LOGO */
+.logo img {
+    width: 80px; /* Regola la grandezza del logo */
+    margin-bottom: 20px;
+}
+
+/* TITOLI */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* NAVIGAZIONE A BOTTONI (Stile Retrobottega) */
+.main-nav {
+    display: flex;
+    flex-direction: column; /* Mette i link uno sotto l'altro */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Linea sottile sopra ogni link */
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-link:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Chiude l'ultima riga */
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #111;
+}

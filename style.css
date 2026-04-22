@@ -1,7 +1,7 @@
 /* RESET E VARIABILI */
 :root {
     --main-color: #ffffff;
-    --accent-color: #e91e63; /* Il rosa acceso dello screenshot */
+    --accent-color: #7B1545; /* Il viola acceso della vineria */
     --bg-dark: #000000;
 }
 
@@ -22,7 +22,7 @@ body {
     position: relative;
     height: 100vh; /* Altezza totale dello schermo */
     width: 100%;
-    background-image: url('foto-vineria.jpg'); /* La tua foto di sfondo */
+    background-image: url('C:\Users\44792\Desktop\Vineria-Fede\vineria-laparelli\img\team-vineria.png'); /* La foto team di sfondo */
     background-size: cover;
     background-position: center;
     display: flex;

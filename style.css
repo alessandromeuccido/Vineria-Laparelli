@@ -162,10 +162,29 @@ h2 {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Effetto al passaggio del mouse: l'icona si colora e si alza leggermente */
+/* 1. Effetto al passaggio del mouse: l'icona si colora e si alza leggermente */
 .footer-icons a:hover {
-    color: #25d366; /* Esempio: diventa verde WhatsApp al passaggio */
     transform: translateY(-5px);
+}
+
+/* 2. Colore WhatsApp (Verde) */
+.footer-icons a:hover .fa-whatsapp {
+    color: #25D366;
+}
+
+/* 3. Colore Email (Blu) */
+/* Usiamo .fa-envelope perché è la classe della tua busta da lettera */
+.footer-icons a:hover .fa-envelope {
+    color: #0078D4; 
+}
+
+/* 4. Colore Instagram (Viola/Rosa) */
+.footer-icons a:hover .fa-instagram {
+    color: #7B1545;
+}
+
+.footer-icons i {
+    transition: color 0.3s ease; /* Il colore sfuma in 0.3 secondi */
 }
 
 /* Stile Testi Footer */

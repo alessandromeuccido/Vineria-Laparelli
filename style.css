@@ -109,8 +109,8 @@ h2 {
     width: 100%;
     
     /* SFONDO FISSO */
-    background-image: url('img/team-vineria.png'); /* L'immagine "dietro" */
-    background-size: cover;
+    background-image: url("img/fede-sorridente.png"); /* L'immagine "dietro" */
+    background-size:50%;
     background-position: center;
     background-attachment: fixed; /* <--- IL SEGRETO È QUI */
     
@@ -231,4 +231,18 @@ h2 {
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.7); /* Testo un po' più spento per non distrarre */
+}
+
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column; /* Da riga a colonna sul telefono */
+    }
+    
+    .parallax-section {
+        background-attachment: scroll; /* Sui telefoni vecchi il fixed a volte dà problemi, meglio scroll */
+    }
+
+    .story-text, .story-image {
+        padding: 40px 20px;
+    }
 }

@@ -15,6 +15,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-dark);
     color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita lo scroll orizzontale fastidioso */
 }
 
 /* HERO SECTION */
@@ -126,9 +129,49 @@ h2 {
 }
 
 /* FOOTER */
-footer {
-    padding: 40px 20px;
+  footer {
+    width: 100%;
+    background-color: var(--bg-dark); /* Il nero del tuo sito */
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column; /* Mette i blocchi uno sotto l'altro */
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Crea uno spazio uguale tra logo, icone e testo */
     text-align: center;
-    font-size: 0.8rem;
-    background-color: #111;
+    margin: 0;
+    /* border: 2px solid red;   */
+}
+
+/* Stile Logo Footer */
+.footer-logo img {
+    width: 90px; /* Più discreto rispetto alla Hero */
+    height: auto;
+    /* opacity: 0.9; */
+}
+
+/* Stile Icone */
+.footer-icons {
+    display: flex;
+    gap: 30px; /* Spazio tra un'icona e l'altra */
+}
+
+.footer-icons a {
+    color: var(--main-color); /* Bianco o grigio chiaro */
+    font-size: 1.8rem; /* Dimensione delle icone */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Effetto al passaggio del mouse: l'icona si colora e si alza leggermente */
+.footer-icons a:hover {
+    color: #25d366; /* Esempio: diventa verde WhatsApp al passaggio */
+    transform: translateY(-5px);
+}
+
+/* Stile Testi Footer */
+.footer-info p {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7); /* Testo un po' più spento per non distrarre */
 }

@@ -154,6 +154,10 @@ h2 {
     justify-content: center;
 }
 
+.parallax-shop .overlay {
+    background: rgba(0, 0, 0, 0.3); /* Meno nero, più trasparenza */
+}
+
 .shop-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Crea due colonne uguali */
@@ -163,7 +167,8 @@ h2 {
 
 /* Stile delle "Card" (Vini e Prodotti) */
 .category-card {
-    background: rgba(0, 0, 0, 0.5); /* Sfondo scuro semi-trasparente */
+    background: rgba(255, 255, 255, 0.886); /* Sfondo scuro semi-trasparente */
+    color: #000000;
     padding: 50px;
     border: 1px solid rgba(255, 255, 255, 0.2); /* Bordo sottile elegante */
     transition: transform 0.3s ease;

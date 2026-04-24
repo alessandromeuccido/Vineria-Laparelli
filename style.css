@@ -110,7 +110,7 @@ h2 {
     
     /* SFONDO FISSO */
     background-image: url("img/wine-cork-vineria.jpg"); /* L'immagine "dietro" */
-    background-size:50%;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed; /* <--- IL SEGRETO È QUI */
     
